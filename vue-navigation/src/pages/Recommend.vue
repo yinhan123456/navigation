@@ -16,7 +16,7 @@
   import Websites from "@/components/Websites";
 
     export default {
-        name: "Recommend",
+      name: "Recommend",
       components: {Catalogue, Websites},
       data() {
           return {
@@ -42,18 +42,16 @@
   }
   .re-cata {
     box-sizing: border-box;
-    /*float: left;*/
-    border-right: .1rem solid black;
+    width: 23rem;
+    border-right: 1px solid black;
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 100;
     height: 100%;
-    width: 22%;
   }
-
   .re-webs {
-    width: 78%;
-    float: right;
+    margin-left: 23rem;
     box-sizing: border-box;
     padding-left: 2rem;
   }

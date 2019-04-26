@@ -27,15 +27,11 @@
           }
       },
       props: {
-          webdata: Array,
+        webdata: Array,
         addP2: Boolean,
         closeP2: Boolean
       },
       methods: {
-          addWebsite: function() {
-            alert("kjkjk");
-            console.log(44444444);
-          }
       }
     }
 </script>
@@ -49,7 +45,4 @@
     text-align: left;
     text-indent: 2rem;
   }
-  /*.websitea {*/
-    /*background: black;*/
-  /*}*/
 </style>

@@ -140,6 +140,7 @@
     border-radius: 1.8rem;
     box-shadow: .3rem .5rem 1.5rem black;
     opacity: .75;
+    min-width: 2rem;
   }
   .address::after {
     content: "";
@@ -147,8 +148,8 @@
     border: 1.3rem transparent solid;
     border-top-color: black;
     position: absolute;
-    top: 3rem;
-    left: .5rem;
+    top: 2.7rem;
+    left: 1rem;
   }
   .addressv-enter-active, .addressv-leave-active {
     transition: opacity .5s, box-shadow .5s;

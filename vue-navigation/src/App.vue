@@ -7,8 +7,7 @@
       <li v-if=ifLogin class="user"><a href="" class="user-li" @click.prevent="quit">您好，{{username}}</a></li>
     </ul>
     <router-view class="view" />
-    <div name="logreg"
-         class="loginview"
+    <div class="loginview"
          v-if=showLogReg @click.prevent.stop=loginR>
       <log-reg></log-reg>
     </div>
@@ -73,19 +72,18 @@ export default {
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
     font-size: 14px;
-    margin: 0;
+    margin: auto;
     padding: 0;
-    width: 100%;
+    min-width: 700px;
   }
   .topbar {
+    width: 100%;
+    padding-left: 25rem;
+    margin-bottom: 2rem;
     list-style-type: none;
-    margin: 0;
     box-sizing: border-box;
-    padding: 0 0 0 0;
-    width: 78%;
     height: 4.7rem;
     border-bottom: .1rem solid black;
-    float: right;
   }
   .topbar li {
     display: inline-block;
@@ -111,7 +109,6 @@ export default {
     text-decoration: none;
     color: inherit;
     display: inline-block;
-    /*height: 4.5rem;*/
     line-height: 4.3rem;
   }
   .view {

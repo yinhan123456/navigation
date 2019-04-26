@@ -1,14 +1,17 @@
 <template>
-  <div class="Personal">
-    <catalogue class="re-cata"
-               :cata=webdata
-               :addCata=true
-               :recomm=true
-               ref="cat"></catalogue>
-    <websites class="re-webs"
-              :webdata=webdata
-              :closeP2=true
-              :addP2=true></websites>
+  <div class="personal">
+    <div class="per-cata">
+      <catalogue :cata=webdata
+        :addCata=true
+        :recomm=true
+        ref="cat"></catalogue>
+    </div>
+    <div class="per-webs">
+      <websites :webdata=webdata
+                :closeP2=true
+                :addP2=true></websites>
+    </div>
+
   </div>
 </template>
 
@@ -46,10 +49,14 @@
 </script>
 
 <style scoped>
-  .re-cata {
+  .personal {
+    width: 100%;
+    position: relative;
+  }
+
+  .per-cata {
     box-sizing: border-box;
-    width: 22%;
-    float: left;
+    width: 23rem;
     border-right: 1px solid black;
     position: fixed;
     top: 0;
@@ -58,9 +65,8 @@
     height: 100%;
   }
 
-  .re-webs {
-    width: 78%;
-    float: right;
+  .per-webs {
+    margin-left: 23rem;
     box-sizing: border-box;
     padding-left: 2rem;
   }
