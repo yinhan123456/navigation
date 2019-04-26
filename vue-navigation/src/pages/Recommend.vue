@@ -1,13 +1,17 @@
 <template>
     <div class="recommend">
-      <catalogue class="re-cata"
-                 :cata=webdata
-                 :addCata=false :recomm=false></catalogue>
-      <websites class="re-webs"
-                :webdata=webdata
-                ad="true"
-                :addP2=false
-                :closeP=false></websites>
+      <div class="re-cata">
+        <catalogue :cata=webdata
+                   :addCata=false :recomm=false></catalogue>
+      </div>
+      <div class="re-webs">
+        <websites :webdata=webdata
+                  ad="true"
+                  :addP2=false
+                  :closeP=false></websites>
+      </div>
+
+
     </div>
 </template>
 
@@ -50,6 +54,26 @@
     z-index: 100;
     height: 100%;
   }
+  .re-webs {
+    margin-left: 23rem;
+    box-sizing: border-box;
+    padding-left: 2rem;
+  }
+  .recommend {
+    width: 100%;
+  }
+
+  .re-cata {
+    box-sizing: border-box;
+    width: 23rem;
+    border-right: 1px solid black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    height: 100%;
+  }
+
   .re-webs {
     margin-left: 23rem;
     box-sizing: border-box;

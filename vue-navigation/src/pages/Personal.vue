@@ -51,7 +51,6 @@
 <style scoped>
   .personal {
     width: 100%;
-    position: relative;
   }
 
   .per-cata {
